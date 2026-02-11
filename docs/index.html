@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Documents</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            /* Background configuration */
+            background: url('Background.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Overlay to ensure readability if the image is bright */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+            width: 100%;
+            max-width: 480px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            color: #fff9e6; /* Slight golden tint */
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 0.5px;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .legal-button {
+            text-decoration: none;
+            color: #ffffff;
+            /* Semi-transparent dark base matching the original image UI */
+            background: rgba(18, 12, 33, 0.7); 
+            border: 1.5px solid rgba(255, 180, 100, 0.3); /* Subtle gold border */
+            padding: 18px 25px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Interactive Hover State */
+        .legal-button:hover {
+            background: rgba(45, 30, 80, 0.8);
+            border-color: rgba(255, 200, 120, 0.8);
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(255, 180, 100, 0.2);
+        }
+
+        .arrow {
+            color: #ffcc66; /* Golden highlight for the arrow */
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Legal</h1>
+        <p class="subtitle">Marketplace Legal Documents</p>
+
+        <div class="button-group">
+            <a href="terms.html" class="legal-button">
+                Terms of Agreement <span class="arrow">›</span>
+            </a>
+            <a href="disclaimer.html" class="legal-button">
+                Marketplace Disclaimer <span class="arrow">›</span>
+            </a>
+            <a href="privacy.html" class="legal-button">
+                Privacy Notice <span class="arrow">›</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
